@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">    
+
+</head>
+<body>
+    
+    <div id="banner">        
+        <img src="img/logo.png" alt="Logotipo Você Saudável">
+    </div>
+
+    <div id="container">
+        
+        <h1>Calcule seu IMC</h1>
+
+        <p>IMC é a sigla para Índice de Massa Corporal, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa. </p>
+
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+
+    
+
+    <div id="content">
+
+        <table>
+
+            <tr>
+                <th>IMC</th>
+                <th>classificação</th>
+            </tr>
+
+            <tr>
+                <td>menor que 18.5</td>
+                <td>magreza</td>
+            </tr>
+            
+            <tr>
+                <td>Entre 18.5 e 24.9</td>
+                <td>Normal</td>
+            </tr>
+            
+            <tr>
+                <td>Entre 25.0 e 29.9</td>
+                <td>Sobrepeso</td>
+            </tr>
+
+            <tr>
+                <td>Maior que 29.9</td>
+                <td>Obesidade</td>
+            </tr>
+
+        </table>
+        <!--area de calculo-->
+        <div id="are-calc">
+        <form action="#">
+            <div>
+            <label for="altura">Altura</label> <br>
+            <input type="text" id="altura" placeholder="Ex 1.17" data-mask="0.00" > 
+        </div>
+            
+        <div>
+            <label for="peso">peso</label> <br>
+            <input type="text" id="peso" placeholder="Ex 66.5" data-mask="000.000" data-mask-reverse="true">
+            </div>
+
+            <button type="button" onclick="calcularimc()">calcular</button>
+        </form>
+        <div id="result">
+                
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+<div id="footer">
+    <a href="https://www.cotiinformatica.com.br/">cotiinformatica</a>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</body>
+</html>
